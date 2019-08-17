@@ -1,0 +1,120 @@
+function setUp() {
+	M2S=./mysql2sqlite
+	testDir=unit_tests
+}
+
+function tearDown() {
+	rm -f actual.out expected.out
+}
+
+function testICanTestOne()
+{
+	# Given
+	cat ${testDir}/test_one.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_one.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
+
+function testICanTestTwo()
+{
+	# Given
+	cat ${testDir}/test_two.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_two.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
+
+function testICanTestThree()
+{
+	# Given
+	cat ${testDir}/test_three.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_three.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
+
+function testICanTestFour()
+{
+	# Given
+	cat ${testDir}/test_four.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_four.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
+
+function testICanTestFive()
+{
+	# Given
+	cat ${testDir}/test_five.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_five.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
+
+function testICanTestSix()
+{
+	# Given
+	cat ${testDir}/test_six.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_six.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
+
+function testICanTestSeven()
+{
+	# Given
+	cat ${testDir}/test_seven.sql.out >expected.out
+	
+	# When
+	${M2S} ${testDir}/test_seven.sql >actual.out
+
+	# Then
+	# assertExitSuccessfully
+	
+	# assertFileNotEmpty actual.out
+	
+	assertNoDiff expected.out actual.out
+}
